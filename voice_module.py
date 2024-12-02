@@ -14,14 +14,14 @@ def findAudioInputDevices():
 
     input_devices = [
         device for device in sd.query_devices()
-        if device['max_input_channels'] > 0 ]
+        if device['max_input_channels'] > 0]
 
     print("\nDISPOSITIVI DI INPUT:")
     for device in input_devices:
         print(device['name'])
 
     # Dispositivo di default
-    default_input = sd.default.device[1] 
+    default_input = sd.default.device[1]
 
     print(f"\nDispositivo di Input Predefinito: {default_input}")
 
