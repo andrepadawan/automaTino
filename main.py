@@ -14,12 +14,9 @@ import pvporcupine
 
 
 def main():
-    load_dotenv()
     #test file .env
     #print(f"Sesso è samba = {os.getenv('Sesso_e_samba')}")
-    i = 0
-    while (i<2):
-        findAudioInputDevices(); i += 1
+    findAudioInputDevices()
 
 
 if __name__ == "__main__":
