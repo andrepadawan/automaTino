@@ -4,6 +4,7 @@ from voice_module import recognize_speech, speak, findAudioInputDevices
 from dotenv import load_dotenv
 import vosk
 import pvporcupine
+from deviceSelection import findAudioInputDevices
 
 #from image_module import capture_photo
 #from movement_module import move_forward, stop
